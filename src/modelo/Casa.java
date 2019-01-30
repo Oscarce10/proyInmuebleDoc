@@ -7,20 +7,21 @@ package modelo;
 public class Casa extends Inmueble{
     
     private int cantNiveles;
-
+    
     /**
      * Constructor parametrico que permite instanciar la clase Casa
-     * a partir de los datos Propietario, Chip, Direccion y Cantidad de niveles
-     * @param objP
-     * @param chip
-     * @param dir
-     * @param valor
+     * a partir de los datos Propietario, Chip, Direccion, valor de la casa y Cantidad de niveles
+     * @param objP Apuntador a objeto Propietario de la casa
+     * @param chip CHIP de la casa
+     * @param dir Direccion de la casa
+     * @param valor Valor de la casa
+     * @param cantNiveles Cantidad de niveles o pisos de la casa
      */
-    public Casa(Propietario objP, String chip, String dir, double valor) {
+    public Casa(int cantNiveles, Propietario objP, String chip, String dir, double valor) {
         super(objP, chip, dir, valor);
-        cantNiveles =0;
+        this.cantNiveles = cantNiveles;
     }
-
+       
     /**
      * Constructor basico que permite instanciar la clase con valores 
      * predeterminados

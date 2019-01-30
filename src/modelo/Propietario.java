@@ -20,9 +20,9 @@ public class Propietario {
     /**
      * Constructor parametrico que permite instanciar la clase Propietario
      * a partir de los datos identificacion (id), nombre (nom) y telefono (tel)
-     * @param id
-     * @param nom
-     * @param tel
+     * @param id Identificacion del propietario
+     * @param nom Nombre del propietario
+     * @param tel Telefono del propietario
      */
     public Propietario(String id, String nom, String tel) {
         this.id = id;

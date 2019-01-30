@@ -18,7 +18,7 @@ public abstract class Inmueble {
      * Constructor parametrico que permite instanciar las clases Casa y 
      * Apartamemto con los atributos que ambas tienen en comun
      * @param objP Apuntador al objeto Propietario
-     * @param chip 
+     * @param chip CHIP del inmueble
      * @param dir Direccion del inmueble
      * @param valor Valor del inmueble
      */

@@ -7,18 +7,22 @@ package modelo;
 public class Apartamento extends Inmueble{
     
     private int bloque, numeroApto;
-
+    
     /**
      * Constructor parametrico que permite instanciar la clase Apartamento
-     * a partir de los datos bloque, y numeroApto
-     * @param bloque
-     * @param numeroApto
+     * a partir de los datos bloque, numero de apartamento, Propietario, Chip, Direccion, valor de la casa y Cantidad de niveles
+     * @param bloque Numero de bloque del apartamento
+     * @param numeroApto Numero del apartamento
+     * @param objP Apuntador a objeto Propietario del apartamento
+     * @param chip CHIP del apartamento
+     * @param dir Direccion del apartamento
+     * @param valor Valor del apartamento
      */
-    public Apartamento(int bloque, int numeroApto) {
-        super();
+    public Apartamento(int bloque, int numeroApto, Propietario objP, String chip, String dir, double valor) {
+        super(objP, chip, dir, valor);
         this.bloque = bloque;
         this.numeroApto = numeroApto;
-    }
+    }   
 
     /**
      * Constructor basico que permite instanciar la clase con valores 
