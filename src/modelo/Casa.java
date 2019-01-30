@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 
 /**
- *Permite crear una instancia de Inmueble tipo Casa
- * @author Oscar Celt
+ * Permite crear una instancia de Inmueble tipo Casa
+ * @author Oscar Cely
  */
 public class Casa extends Inmueble{
     
@@ -27,7 +22,8 @@ public class Casa extends Inmueble{
     }
 
     /**
-     *Constructor basico que permite instanciar la clase con valores predeterminados
+     * Constructor basico que permite instanciar la clase con valores 
+     * predeterminados
      */
     public Casa() {
         super();
@@ -35,7 +31,7 @@ public class Casa extends Inmueble{
     }
     
     /**
-     *Retorna el valor del impuesto de la casa a partir del valor de esta y 
+     * Retorna el valor del impuesto de la casa a partir del valor de esta y 
      * corresponde al 10%
      * @return double
      */
@@ -46,12 +42,14 @@ public class Casa extends Inmueble{
         return this.valor * 0.1;
     }
     
-    //No es necesario los getters and setters de esta clase ya que los esta heredando de la clase padre, a menos solo que se quieran sobreescribir los metodos
-    //Solo seria necesario los get y set de los atributos propios de la clase, en este caso cantNiveles
+    /* No es necesario los getters and setters de esta clase ya que los esta 
+    heredando de la clase padre, a menos solo que se quieran sobreescribir los 
+    metodos. Solo seria necesario los get y set de los atributos propios de la 
+    clase, en este caso cantNiveles */
 
     /**
-     *Retorna la cantidad de pisos o niveles definidos para la casa
-     * @return
+     * Retorna la cantidad de pisos o niveles definidos para la casa
+     * @return int
      */
     //@return + tipo de dato que retorna
 
@@ -60,7 +58,7 @@ public class Casa extends Inmueble{
     }
 
     /**
-     *Establece o modifica la cantidad de niveles de la casa
+     * Establece o modifica la cantidad de niveles de la casa
      * @param cantNiveles
      */
     public void setCantNiveles(int cantNiveles) {
